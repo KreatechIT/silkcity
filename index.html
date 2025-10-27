@@ -1509,9 +1509,9 @@
         class="bg-[url('assets/footer/bg.png')] bg-cover bg-center pt-12 px-4 sm:px-6 lg:px-8 text-white"
       >
         <div class="mx-auto container px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-3 gap-0">
             <!-- Col 1: Logo + hours -->
-            <div class="py-8 px-3">
+            <div class="py-2 px-3 sm:py-8">
               <a href="#" class="inline-flex items-start gap-2 mb-4">
                 <img
                   src="assets/header/logo.png"
@@ -1533,7 +1533,7 @@
             <!-- Col 2: Products -->
             <div class="border-[#fff]/30 lg:border-l border-[#fff]/30">
               <div class="border-b border-[#fff]/30 pb-5">
-                <div class="flex hover:bg-[#fff]/10 ml-5 pb-4 pt-10 transition">
+                <div class="flex hover:bg-[#fff]/10 ml-5 pb-4 pt-10 transition cursor-pointer" id="mapAddress"> 
                   <div class="pl-3">
                     <img src="assets/footer/pin.png" alt="" />
                   </div>
@@ -1555,25 +1555,27 @@
                   </div>
                 </div>
               </div>
-              <div class="my-10">
+              <div class="my-2">
                 <div class="flex hover:bg-[#fff]/10 ml-5 pb-4 pt-10 transition">
-                  <div class="pl-3">
-                    <img src="assets/footer/email.png" alt="" />
-                  </div>
-                  <div class="px-5">
-                    <div class="">
-                      <h3
-                        class="mb-3 font-light sm:text-[16px] text-[16px] text-white font-semibold font-[Inter]"
-                      >
-                        Email
-                      </h3>
-                      <p
-                        class="mt-1 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
-                      >
-                        info@silkcitybd.com
-                      </p>
+                  <a href="mailto:info@silkcitybd.com" class="flex cursor-pointer w-full" target="_blank">
+                    <div class="pl-3">
+                      <img src="assets/footer/email.png" alt="" />
                     </div>
-                  </div>
+                    <div class="px-5">
+                      <div class="">
+                        <h3
+                          class="mb-3 font-light sm:text-[16px] text-[16px] text-white font-semibold font-[Inter]"
+                        >
+                          Email
+                        </h3>
+                        <p
+                          class="mt-1 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
+                        >
+                          info@silkcitybd.com
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1582,40 +1584,44 @@
             <div class="border-[#fff]/30 lg:border-l border-[#fff]/30">
               <div class="border-b border-[#fff]/30 pb-10">
                 <div class="flex hover:bg-[#fff]/10 ml-5 pt-10 pb-5 transition">
-                  <div class="pl-3">
-                    <img src="assets/footer/call.png" alt="" />
-                  </div>
-                  <div class="px-5">
-                    <div class="">
-                      <h3
-                        class="mb-3 font-light sm:text-[16px] text-[16px] text-white font-semibold font-[Inter]"
-                      >
-                        Phone Number
-                      </h3>
-                      <p
-                        class="mt-4 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
-                      >
-                        +88 02 48811049
-                      </p>
+                  <a href="tel:+8802448811049" class="flex cursor-pointer w-full">
+                    <div class="pl-3">
+                      <img src="assets/footer/call.png" alt="" target="_blank" />
                     </div>
-                  </div>
+                    <div class="px-5">
+                      <div class="">
+                        <h3
+                          class="mb-3 font-light sm:text-[16px] text-[16px] text-white font-semibold font-[Inter]"
+                        >
+                          Phone Number
+                        </h3>
+                        <p
+                          class="mt-4 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
+                        >
+                          +88 02 48811049
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <div class="flex hover:bg-[#fff]/10 ml-5 py-5 transition">
-                  <div class="pl-3">
-                    <img src="assets/footer/whatsapp.png" alt="" />
-                  </div>
-                  <div class="px-5">
-                    <div class="">
-                      <p
-                        class="mt-1 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
-                      >
-                        +88 01318-321614
-                      </p>
+                  <a href="https://wa.me/+8801318321614" class="flex cursor-pointer w-full" target="_blank">
+                    <div class="pl-3">
+                      <img src="assets/footer/whatsapp.png" alt="" />
                     </div>
-                  </div>
+                    <div class="px-5">
+                      <div class="">
+                        <p
+                          class="mt-1 text-[13px] text-[#fff] font-[Inter] leading-[200%] font-light"
+                        >
+                          +88 01318-321614
+                        </p>
+                      </div>
+                    </div>
+                  </a>                
                 </div>
               </div>
-              <div class="my-10">
+              <div class="my-2">
                 <div class="flex hover:bg-[#fff]/10 ml-5 pb-4 pt-10 transition">
                   <div class="pl-3">
                     <img src="assets/footer/clock.png" alt="" />
@@ -1844,6 +1850,14 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        const mapAddress = document.getElementById('mapAddress');
+
+      mapAddress.addEventListener('click', () => {
+        const address = 'Apt 3/A, House 287, Road 19C\nMohakhali DOHS, Dhaka-1206, Bangladesh';
+        const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
+        window.open(url, '_blank');
+      });
       const textElement = document.getElementById("animated-text");
       const texts = [
         "Industrial Chemicals",
